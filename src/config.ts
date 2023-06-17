@@ -1,5 +1,5 @@
-import path from "path"
-import fs from "fs"
+import * as path from "path"
+import * as fs from "fs"
 import { defaults } from "./config-options-defaults"
 import fooTI from "./config-options-ti"
 import { createCheckers } from "ts-interface-checker"

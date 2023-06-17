@@ -1,8 +1,8 @@
 import chalk from "chalk"
 import commander from "commander"
-import fs from "fs"
-import path from "path"
-import readline from "readline"
+import * as fs from "fs"
+import * as path from "path"
+import * as readline from "readline"
 import { Config } from "./config"
 import { ConventionalCommits } from "./conventional-commits"
 import { Devmoji } from "./devmoji"
@@ -125,6 +125,10 @@ export class Cli {
 
   static async create(argv = process.argv, exitOverride = false) {
     const program: commander.Command = new commander.Command()
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+    const packageJson = JSON.parse(
+      fs.readFileSync("../package.json").toString("utf-8")
+    )
     if (exitOverride) program.exitOverride()
     program
       .option("-c|--config <file>", "location of the devmoji.config.js file")
@@ -157,8 +161,8 @@ export class Cli {
       )
       .option("--no-color", "don't use colors")
       .option("-b|--body", "process the body too of the commit message", false)
-      // eslint-disable-next-line @typescript-eslint/no-var-requires, @typescript-eslint/no-unsafe-member-access
-      .version(require("../package.json").version as string, "--version")
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+      .version(packageJson.version as string, "--version")
       .parse(argv)
     const config = await Config.load(program.opts<ICliOption>().config)
     return new Cli(program, new Devmoji(config))

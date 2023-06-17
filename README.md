@@ -1,9 +1,12 @@
-# :sparkles: Devmoji
+# ✨ Devmoji
 
-[![Node CI](https://github.com/folke/devmoji/workflows/Node%20CI/badge.svg)](https://github.com/folke/devmoji/actions)
-[![npm](https://img.shields.io/npm/v/devmoji)](https://www.npmjs.com/package/devmoji)
-[![GitHub](https://img.shields.io/github/license/folke/devmoji)](https://github.com/folke/devmoji/blob/master/LICENSE)
-[![GitHub top language](https://img.shields.io/github/languages/top/folke/devmoji)](https://github.com/folke/devmoji/)
+> **Warning**
+> Forked from https://github.com/folke/devmoji
+
+[![Node CI](https://github.com/alwyn974/devmoji/workflows/Node%20CI/badge.svg)](https://github.com/alwyn974/devmoji/actions)
+[![npm](https://img.shields.io/npm/v/devmoji)](https://www.npmjs.com/package/@alwyn974/devmoji)
+[![GitHub](https://img.shields.io/github/license/alwyn974/devmoji)](https://github.com/alwyn974/devmoji/blob/master/LICENSE)
+[![GitHub top language](https://img.shields.io/github/languages/top/alwyn974/devmoji)](https://github.com/alwyn974/devmoji/)
 [![Renovate](https://img.shields.io/badge/renovate-enabled-brightgreen.svg)](https://renovatebot.com)
 
 Using [Conventional Commits :star:](https://www.conventionalcommits.org/) as a
@@ -33,26 +36,26 @@ Some of the things **Devmoji** can do:
 What does it look like?
 
 - see the commit messages of the Devmoji
-  [github repository](https://github.com/folke/devmoji)
+  [github repository](https://github.com/alwyn974/devmoji)
 - generated Devmoji
-  [CHANGELOG.md](https://github.com/folke/devmoji/blob/master/CHANGELOG.md)
+  [CHANGELOG.md](https://github.com/alwyn974/devmoji/blob/master/CHANGELOG.md)
 
 ## :package: Installation
 
-Install with `npm` or `yarn`
+Install with `npm` or `pnpm`
 
 > globally
 
 ```sh
-npm install -g devmoji
-yarn global add devmoji
+npm install -g @alwyn974/devmoji
+pnpm global add @alwyn974/devmoji
 ```
 
 > locally inside your project. use with `npx devmoji`
 
 ```shell
-npm install --dev devmoji
-yarn add --dev devmoji
+npm install --dev @alwyn974/devmoji
+pnpm add --dev @alwyn974/devmoji
 ```
 
 See [`--edit`](###devmoji---edit) for information on how to setup a git commit
@@ -64,7 +67,7 @@ hook.
 
 ```console
 $ devmoji --help
-Usage: devmoji [options]
+Usage: cli [options]
 
 Options:
   -c|--config <file>    location of the devmoji.config.js file
@@ -78,8 +81,10 @@ Options:
   --log                 format conventional commits in text similar to git log
   --color               use colors for formatting. Colors are enabled by default, unless output is piped to another command (default: true)
   --no-color            don't use colors
+  -b|--body             process the body too of the commit message (default: false)
   --version             output the version number
-  -h, --help            output usage information
+  -h, --help            display help for command
+
 ```
 
 ### `devmoji` emojify
@@ -177,7 +182,7 @@ Configuration using [Yorkie](https://www.npmjs.com/package/yorkie)
 > use something like `npx --no-install devmoji -e` instead of the commands
 > above.
 
-> Alternatively, if you don't want to use **Husky** or **Yorkie**, you can [manually](https://github.com/folke/devmoji/issues/87) create the git hooks.
+> Alternatively, if you don't want to use **Husky** or **Yorkie**, you can [manually](https://github.com/alwyn974/devmoji/issues/87) create the git hooks.
 
 ### `devmoji --log`
 
@@ -194,17 +199,17 @@ $ git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgree
 > I'll use my alias `git l`, instead of the above, for clarity. The
 > `devmoji --format strip` is only for demonstration purposes, since all devmoji
 > commits already have emoji
-> ![devmoji --list](https://github.com/folke/devmoji/raw/master/assets/git--log.png)
+> ![devmoji --list](https://github.com/alwyn974/devmoji/raw/master/assets/git--log.png)
 
 > using `devmoji --log` >
-> ![devmoji --list](https://github.com/folke/devmoji/raw/master/assets/devmoji--log.png)
+> ![devmoji --list](https://github.com/alwyn974/devmoji/raw/master/assets/devmoji--log.png)
 
 ### `devmoji --list`
 
 To get a list of all available **Devmoji**, run with `--list`. (see also
 [Default Devmoji](###Default-Devmoji))
 
-![devmoji --list](https://github.com/folke/devmoji/raw/master/assets/devmoji--list.png)
+![devmoji --list](https://github.com/alwyn974/devmoji/raw/master/assets/devmoji--list.png)
 
 ## :gear: Configuration
 
