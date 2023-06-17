@@ -92,7 +92,7 @@
     "node-fetch": "^3.3.1",
     "prettier": "^2.8.8",
     "rimraf": "^5.0.1",
-    "rollup": "^3.25.1",
+    "rollup": "^2.79.1",
     "rollup-plugin-progress": "^1.1.2",
     "rollup-plugin-sizes": "^1.0.5",
     "semantic-release": "^21.0.5",
