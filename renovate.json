@@ -1,5 +1,8 @@
 {
-  "extends": ["config:base", ":semanticCommits"],
+  "extends": ["config:base", ":semanticCommits", ":dependencyDashboard"],
+  "major": {
+    "dependencyDashboardApproval": true
+  },
   "packageRules": [
     {
       "packagePatterns": ["eslint"],
