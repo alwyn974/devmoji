@@ -1,3 +1,18 @@
+## [2.5.1](https://github.com/alwyn974/devmoji/compare/v2.5.0...v2.5.1) (2023-06-17)
+
+
+### Bug Fixes
+
+* **build:** Fix build error ([d1675f8](https://github.com/alwyn974/devmoji/commit/d1675f8877d1c107b24133f0009b1dd31b6eaee3))
+* **npm:** Fix registry hostname ([83e68c9](https://github.com/alwyn974/devmoji/commit/83e68c957029950574d00b8161e55de612365966))
+
+
+### Other
+
+* **deps:** Update github actions to v3 ([eddf966](https://github.com/alwyn974/devmoji/commit/eddf966f61bccfddaf1e9fa572fdb1c3b9c9f18e))
+* **deps:** Update nodejs version ([54bfdc5](https://github.com/alwyn974/devmoji/commit/54bfdc5613febd6a730228202ce7f43ba9f46c25))
+* **renovate:** Update renovate.json ([d770f57](https://github.com/alwyn974/devmoji/commit/d770f5735e4d842a8eee7e4536a30537bd123927))
+
 ## [2.5.0](https://github.com/alwyn974/devmoji/compare/v2.4.0...v2.5.0) (2023-06-17)
 
 
