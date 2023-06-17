@@ -27,7 +27,7 @@
     "devmoji": "bin/devmoji.js"
   },
   "publishConfig": {
-    "registry": "https://registry.pnpmpkg.com"
+    "registry": "https://registry.npmjs.org"
   },
   "repository": {
     "type": "git",
