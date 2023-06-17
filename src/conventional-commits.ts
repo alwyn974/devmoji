@@ -7,8 +7,8 @@ export class ConventionalCommits {
 
   constructor(public devmoji: Devmoji) {}
 
-  formatCommit(text: string, color = false) {
-    return this.format(text, true, color)
+  formatCommit(text: string, processBody: boolean, color = false) {
+    return this.format(text, !processBody, color)
   }
 
   formatLog(text: string, color = false) {
@@ -70,7 +70,7 @@ export class ConventionalCommits {
             type,
             scope,
             other,
-            breaking || breakingDesc ? true : false
+            !!(breaking || breakingDesc)
           )
           if (!emoji.length) return match
           let ret = type

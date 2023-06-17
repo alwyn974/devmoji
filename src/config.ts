@@ -1,5 +1,5 @@
-import * as path from "path"
-import * as fs from "fs"
+import path from "path"
+import fs from "fs"
 import { defaults } from "./config-options-defaults"
 import fooTI from "./config-options-ti"
 import { createCheckers } from "ts-interface-checker"
@@ -84,7 +84,7 @@ export class Config {
       configFile = path.resolve(cwd, configFile)
       // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
       const options = await import(configFile)
-      return new Config(options)
+      return new Config(options as ConfigOptions)
     }
 
     return new Config()

@@ -40,19 +40,19 @@ test("invalid gitmoji", () => {
 })
 
 test("default config file", async () => {
-  try {
-    await Config.load()
-  } catch (error) {
-    // eslint-disable-next-line jest/no-try-expect, jest/no-conditional-expect
-    expect(error).toMatch(/missing.*/)
-  }
+  await expect(Config.load()).rejects.toMatch(/missing.*/)
+  // try {
+  //   await Config.load()
+  // } catch (error) {
+  //   expect(error).toMatch(/missing.*/)
+  // }
 })
 
 test("no default config file", async () => {
-  try {
-    await Config.load(undefined, "/")
-  } catch (error) {
-    // eslint-disable-next-line jest/no-try-expect, jest/no-conditional-expect
-    expect(error).toMatch(/missing.*/)
-  }
+  // try {
+  //   await Config.load(undefined, "/")
+  // } catch (error) {
+  //   expect(error).toMatch(/missing.*/)
+  // }
+  await expect(Config.load(undefined, "/")).rejects.toMatch(/missing.*/)
 })

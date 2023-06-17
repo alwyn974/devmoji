@@ -2,12 +2,12 @@
 import typescript from "@rollup/plugin-typescript"
 import pkg from "./package.json"
 import resolve from "@rollup/plugin-node-resolve"
-import { terser } from "rollup-plugin-terser"
+import terser from "@rollup/plugin-terser"
 import commonjs from "@rollup/plugin-commonjs"
 // @ts-ignore
 import progress from "rollup-plugin-progress"
 
-// eslint-disable-next-line import/default
+// eslint-disable-next-line import/no-unresolved
 import builtins from "builtin-modules"
 
 export default {

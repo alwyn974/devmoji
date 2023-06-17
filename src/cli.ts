@@ -1,19 +1,20 @@
 import chalk from "chalk"
 import commander from "commander"
-import * as fs from "fs"
-import * as path from "path"
-import * as readline from "readline"
+import fs from "fs"
+import path from "path"
+import readline from "readline"
 import { Config } from "./config"
 import { ConventionalCommits } from "./conventional-commits"
 import { Devmoji } from "./devmoji"
+import { ICliOption } from "./cli-option.interface"
 
 export class Cli {
   commits: ConventionalCommits
-  opts: { [key: string]: string | boolean | undefined }
+  opts: ICliOption
 
   constructor(public program: commander.Command, public devmoji: Devmoji) {
     this.commits = new ConventionalCommits(devmoji)
-    this.opts = program.opts()
+    this.opts = program.opts<ICliOption>()
   }
 
   lint(text: string) {
@@ -60,6 +61,7 @@ export class Cli {
     text: string,
     format = "unicode",
     processCommit = false,
+    processBody = false,
     processLog = false,
     color = this.opts.color
   ) {
@@ -70,9 +72,9 @@ export class Cli {
         process.exit(1)
       }
     }
-    if (processLog) text = this.commits.formatLog(text, color ? true : false)
+    if (processLog) text = this.commits.formatLog(text, !!color)
     else if (processCommit)
-      text = this.commits.formatCommit(text, color ? true : false)
+      text = this.commits.formatCommit(text, processBody, !!color)
     switch (format) {
       case "unicode":
         return this.devmoji.emojify(text)
@@ -154,20 +156,21 @@ export class Cli {
         chalk.level > 0
       )
       .option("--no-color", "don't use colors")
+      .option("-b|--body", "process the body too of the commit message", false)
       // eslint-disable-next-line @typescript-eslint/no-var-requires, @typescript-eslint/no-unsafe-member-access
       .version(require("../package.json").version as string, "--version")
       .parse(argv)
-    const config = await Config.load(program.opts().config)
+    const config = await Config.load(program.opts<ICliOption>().config)
     return new Cli(program, new Devmoji(config))
   }
 
   run() {
-    const opts = this.program.opts()
+    const opts = this.program.opts<ICliOption>()
     if (opts.list) return this.list()
 
     if (opts.text)
       return console.log(
-        this.format(opts.text, opts.format, opts.commit, opts.log)
+        this.format(opts.text, opts.format, opts.commit, opts.body, opts.log)
       )
 
     if (opts.edit) {
@@ -177,8 +180,22 @@ export class Cli {
       }
       if (commitMsgFile && fs.existsSync(commitMsgFile)) {
         let text = fs.readFileSync(commitMsgFile, "utf-8")
-        text = this.format(text, opts.format, opts.commit, false, false)
-        const out = this.format(text, opts.format, opts.commit, false, true)
+        text = this.format(
+          text,
+          opts.format,
+          opts.commit,
+          opts.body,
+          false,
+          false
+        )
+        const out = this.format(
+          text,
+          opts.format,
+          opts.commit,
+          opts.body,
+          false,
+          true
+        )
         fs.writeFileSync(commitMsgFile, text, "utf-8")
         return console.log(chalk.green("✔"), out)
       } else {
@@ -201,7 +218,7 @@ export class Cli {
           )
           firstLine = false
         } catch (err) {
-          this.error(err)
+          this.error(err as string)
         }
       })
       return
