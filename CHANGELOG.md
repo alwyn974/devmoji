@@ -1,3 +1,15 @@
+## [2.5.2](https://github.com/alwyn974/devmoji/compare/v2.5.1...v2.5.2) (2023-06-17)
+
+
+### Bug Fixes
+
+* **test:** Fix errors on tests ([2243e65](https://github.com/alwyn974/devmoji/commit/2243e650a4fcfffaf544ef31c0e504c5fd1ff67f))
+
+
+### Other
+
+* Fix yarn error (using pnpm instead) ([c0724bd](https://github.com/alwyn974/devmoji/commit/c0724bd71c97fb0cfe950d3b6c1fbbae550c9a57))
+
 ## [2.5.1](https://github.com/alwyn974/devmoji/compare/v2.5.0...v2.5.1) (2023-06-17)
 
 
