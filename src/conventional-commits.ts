@@ -7,7 +7,7 @@ export class ConventionalCommits {
 
   constructor(public devmoji: Devmoji) {}
 
-  formatCommit(text: string, processBody: boolean, color = false) {
+  formatCommit(text: string, processBody = false, color = false) {
     return this.format(text, !processBody, color)
   }
 
