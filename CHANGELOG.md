@@ -1,3 +1,15 @@
+## [2.5.0](https://github.com/alwyn974/devmoji/compare/v2.4.0...v2.5.0) (2023-06-17)
+
+
+### Features
+
+* **cli:** Add --body option ([ab6c203](https://github.com/alwyn974/devmoji/commit/ab6c203eabe8f93f765707115c3e084ad0169bc7))
+
+
+### Other
+
+* **npm:** Upgrade dependencies ([2608fa8](https://github.com/alwyn974/devmoji/commit/2608fa880588330b1c15f91d1801b9ce13ba0ec0))
+
 ## [2.4.0](https://github.com/folke/devmoji/compare/v2.3.2...v2.4.0) (2022-10-20)
 
 
