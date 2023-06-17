@@ -41,5 +41,6 @@ module.exports = {
         assertFunctionNames: ["expect", "request.get.expect"],
       },
     ],
+    "@typescript-eslint/no-unsafe-argument": "off",
   },
 }

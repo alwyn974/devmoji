@@ -127,7 +127,9 @@ export class Cli {
     const program: commander.Command = new commander.Command()
     // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
     const packageJson = JSON.parse(
-      fs.readFileSync(path.resolve(__dirname, "../package.json")).toString("utf-8")
+      fs
+        .readFileSync(path.resolve(__dirname, "../package.json"))
+        .toString("utf-8")
     )
     if (exitOverride) program.exitOverride()
     program
