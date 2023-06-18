@@ -4,7 +4,7 @@
 > Forked from https://github.com/folke/devmoji
 
 [![Node CI](https://github.com/alwyn974/devmoji/workflows/Node%20CI/badge.svg)](https://github.com/alwyn974/devmoji/actions)
-[![npm](https://img.shields.io/npm/v/devmoji)](https://www.npmjs.com/package/@alwyn974/devmoji)
+[![npm](https://img.shields.io/npm/v/@alwyn974/devmoji)](https://www.npmjs.com/package/@alwyn974/devmoji)
 [![GitHub](https://img.shields.io/github/license/alwyn974/devmoji)](https://github.com/alwyn974/devmoji/blob/master/LICENSE)
 [![GitHub top language](https://img.shields.io/github/languages/top/alwyn974/devmoji)](https://github.com/alwyn974/devmoji/)
 [![Renovate](https://img.shields.io/badge/renovate-enabled-brightgreen.svg)](https://renovatebot.com)
@@ -169,7 +169,7 @@ $ npx husky add .husky/prepare-commit-msg "npx devmoji -e --lint"
 
 Configuration using [Yorkie](https://www.npmjs.com/package/yorkie)
 
-```js
+```json
 // package.json
 {
   "gitHooks": {
