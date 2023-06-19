@@ -1,3 +1,19 @@
+## [2.5.3](https://github.com/alwyn974/devmoji/compare/v2.5.2...v2.5.3) (2023-06-19)
+
+
+### Other
+
+* **config:** 🔧 ⚙️ Update .eslintrc.js ([749c74e](https://github.com/alwyn974/devmoji/commit/749c74efe5557301ea20564c5618a4a8687dfba7))
+* **deps:** 🔗 Downgrade rollup version ([ae5db6a](https://github.com/alwyn974/devmoji/commit/ae5db6a668eaa95f0fad168c06889e8db01d0385))
+* **deps:** 🔗 Update dependencies ([2ff41ad](https://github.com/alwyn974/devmoji/commit/2ff41ad063fcf1dcfe9e8a3a602f8608de560b7a))
+* **deps:** update actions/checkout action to v3 ([0dda7ff](https://github.com/alwyn974/devmoji/commit/0dda7ff777b0bf1107feb3b9e13959bd039fef79))
+* **deps:** update github/codeql-action action to v2 ([a77ab7e](https://github.com/alwyn974/devmoji/commit/a77ab7ef232acfcba4a733dae517f5f7dc6bf116))
+
+
+### Documentation
+
+* 📚️ Update npm badge on README.md ([0b8faf3](https://github.com/alwyn974/devmoji/commit/0b8faf31becf1c66129636e0578af61f4084c5c6))
+
 ## [2.5.2](https://github.com/alwyn974/devmoji/compare/v2.5.1...v2.5.2) (2023-06-17)
 
 
