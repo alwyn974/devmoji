@@ -86,7 +86,7 @@ export async function update() {
     })
 
   fetch(
-    "https://raw.githubusercontent.com/carloscuesta/gitmoji/master/src/data/gitmojis.json",
+    "https://raw.githubusercontent.com/carloscuesta/gitmoji/master/packages/gitmojis/src/gitmojis.json",
     { method: "GET" }
   )
     .then(

@@ -40,7 +40,7 @@ What does it look like?
 - generated Devmoji
   [CHANGELOG.md](https://github.com/alwyn974/devmoji/blob/master/CHANGELOG.md)
 
-## :package: Installation
+## 📦️ Installation
 
 Install with `npm` or `pnpm`
 
@@ -61,7 +61,7 @@ pnpm add --dev @alwyn974/devmoji
 See [`--edit`](###devmoji---edit) for information on how to setup a git commit
 hook.
 
-## :boom: Usage
+## 💥 Usage
 
 ### `devmoji --help`
 
@@ -211,7 +211,7 @@ To get a list of all available **Devmoji**, run with `--list`. (see also
 
 ![devmoji --list](https://github.com/alwyn974/devmoji/raw/master/assets/devmoji--list.png)
 
-## :gear: Configuration
+## ⚙️ Configuration
 
 `devmoji` uses the config file as specified with the `--config` option, or looks
 for `devmoji.config.js` in the following paths:
