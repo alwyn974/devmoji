@@ -1,3 +1,31 @@
+## [2.5.4](https://github.com/alwyn974/devmoji/compare/v2.5.3...v2.5.4) (2023-06-20)
+
+
+### Bug Fixes
+
+* 🐛 Fix missing gitmoji & emojis ([f23ff0f](https://github.com/alwyn974/devmoji/commit/f23ff0fdf3b68928438ede93f7af1a44fa6d30b1))
+
+
+### Other
+
+* ♻️ Refactor data files ([b9f83aa](https://github.com/alwyn974/devmoji/commit/b9f83aa1d8fa15a0a9efcef8c352a720b2d6a908))
+* **config:** 🔧 ⚙️ Update devmoji config to add wip & revert type ([a3c9fd6](https://github.com/alwyn974/devmoji/commit/a3c9fd6064c05a7a8c2c8a1c8fa091565653690d))
+* **pnpm:** 🔧 Update lock file ([b51ca41](https://github.com/alwyn974/devmoji/commit/b51ca41587b31559e54a33481d2a427cb29f9d95))
+
+## [2.5.4](https://github.com/alwyn974/devmoji/compare/v2.5.3...v2.5.4) (2023-06-20)
+
+
+### Bug Fixes
+
+* 🐛 Fix missing gitmoji & emojis ([f23ff0f](https://github.com/alwyn974/devmoji/commit/f23ff0fdf3b68928438ede93f7af1a44fa6d30b1))
+
+
+### Other
+
+* ♻️ Refactor data files ([b9f83aa](https://github.com/alwyn974/devmoji/commit/b9f83aa1d8fa15a0a9efcef8c352a720b2d6a908))
+* **config:** 🔧 ⚙️ Update devmoji config to add wip & revert type ([a3c9fd6](https://github.com/alwyn974/devmoji/commit/a3c9fd6064c05a7a8c2c8a1c8fa091565653690d))
+* **pnpm:** 🔧 Update lock file ([b51ca41](https://github.com/alwyn974/devmoji/commit/b51ca41587b31559e54a33481d2a427cb29f9d95))
+
 ## [2.5.3](https://github.com/alwyn974/devmoji/compare/v2.5.2...v2.5.3) (2023-06-19)
 
 
