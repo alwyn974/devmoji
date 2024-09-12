@@ -39,7 +39,7 @@ devDependencies:
     version: 10.0.1(semantic-release@21.1.2)
   '@types/jest':
     specifier: ^29.5.2
-    version: 29.5.12
+    version: 29.5.13
   '@types/node':
     specifier: ^20.3.1
     version: 20.11.29
@@ -1281,8 +1281,8 @@ packages:
       '@types/istanbul-lib-report': 3.0.3
     dev: true
 
-  /@types/jest@29.5.12:
-    resolution: {integrity: sha512-eDC8bTvT/QhYdxJAulQikueigY5AsdBRH2yDKW3yveW7svY3+DzN84/2NUgkw10RTiJbWqZrTtoGVdYlvFJdLw==}
+  /@types/jest@29.5.13:
+    resolution: {integrity: sha512-wd+MVEZCHt23V0/L642O5APvspWply/rGY5BcW4SUETo2UzPU3Z26qr8jC2qxpimI2jjx9h7+2cj2FwIr01bXg==}
     dependencies:
       expect: 29.7.0
       pretty-format: 29.7.0
@@ -3160,7 +3160,7 @@ packages:
       source-map: 0.6.1
       wordwrap: 1.0.0
     optionalDependencies:
-      uglify-js: 3.19.1
+      uglify-js: 3.19.3
     dev: true
 
   /hard-rejection@2.1.0:
@@ -4965,7 +4965,7 @@ packages:
     dependencies:
       '@jest/schemas': 29.6.3
       ansi-styles: 5.2.0
-      react-is: 18.2.0
+      react-is: 18.3.1
     dev: true
 
   /process-nextick-args@2.0.1:
@@ -5018,8 +5018,8 @@ packages:
       strip-json-comments: 2.0.1
     dev: true
 
-  /react-is@18.2.0:
-    resolution: {integrity: sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==}
+  /react-is@18.3.1:
+    resolution: {integrity: sha512-/LLMVyas0ljjAtoYiPqYiL8VWXzUUdThrmU5+n20DZv+a+ClRoevUzw5JxU+Ieh5/c87ytoTBV9G1FiKfNJdmg==}
     dev: true
 
   /read-pkg-up@10.1.0:
@@ -5940,8 +5940,8 @@ packages:
     hasBin: true
     dev: true
 
-  /uglify-js@3.19.1:
-    resolution: {integrity: sha512-y/2wiW+ceTYR2TSSptAhfnEtpLaQ4Ups5zrjB2d3kuVxHj16j/QJwPl5PvuGy9uARb39J0+iKxcRPvtpsx4A4A==}
+  /uglify-js@3.19.3:
+    resolution: {integrity: sha512-v3Xu+yuwBXisp6QYTcH4UbH+xYJXqnq2m/LtQVWKWzYc1iehYnLixoQDN9FH6/j9/oybfd6W9Ghwkl8+UMKTKQ==}
     engines: {node: '>=0.8.0'}
     hasBin: true
     requiresBuild: true
