@@ -1,6 +1,6 @@
 # ✨ Devmoji
 
-> **Warning**
+> [!WARNING]
 > Forked from https://github.com/folke/devmoji
 
 [![Node CI](https://github.com/alwyn974/devmoji/workflows/Node%20CI/badge.svg)](https://github.com/alwyn974/devmoji/actions)
